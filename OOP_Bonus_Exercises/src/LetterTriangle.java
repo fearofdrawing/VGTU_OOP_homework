@@ -19,7 +19,8 @@ public class LetterTriangle {
         int n = c - 64;
 
         int o;      // additional variables for increasing and decreasing character sequences' generation
-
+        
+        // height of triangle
         for (int i = 1; i <= n; i++) {
 
             // print spaces
@@ -34,6 +35,7 @@ public class LetterTriangle {
                 o++;
                 System.out.print((char)(o + 64));
             }
+            // print increasing character sequence
             for (int q = 1; q < i; q++) {
                 o--;
                 System.out.print((char)(o + 64));
